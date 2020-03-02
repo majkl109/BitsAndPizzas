@@ -1,4 +1,5 @@
 <resources>
     <string name="create_order">Create order</string>
     <string name="create_order_title">Create order</string>
+    <string name="action_share">Share</string>
 </resources>
