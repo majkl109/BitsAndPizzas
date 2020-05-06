@@ -9,4 +9,15 @@
         <item>Diavolo</item>
         <item>Funghi</item>
     </string-array>
+
+    <string-array name="pasta">
+        <item>Carbonara</item>
+        <item>Bolognese</item>
+    </string-array>
+
+    <string-array name="stores">
+        <item>Korner</item>
+        <item>Eden</item>
+    </string-array>
+
 </resources>
