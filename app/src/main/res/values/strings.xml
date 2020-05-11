@@ -25,4 +25,10 @@
     <string name="pasta_tab">Pasta</string>
     <string name="stores_tab">Stores</string>
 
+    <string name="company_name">Bits and pizzas</string>
+    <string name="restaurant_image">Restaurant image</string>
+    <string name="home_text">Bits and pizzas opened its doors on 21. november 1981
+        and been in business since.We are very pleased to announce that we will be opening
+        second restaurant in future chain of our successful restaurants. </string>
+
 </resources>
