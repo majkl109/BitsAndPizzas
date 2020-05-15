@@ -31,4 +31,7 @@
         and been in business since.We are very pleased to announce that we will be opening
         second restaurant in future chain of our successful restaurants. </string>
 
+    <string name="order_name_hint">Please enter your name</string>
+    <string name="order_details_hint">Please enter your order</string>
+
 </resources>
