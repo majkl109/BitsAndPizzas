@@ -3,6 +3,7 @@ package com.example.bitsandpizzas;
 
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -40,6 +41,10 @@ public class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImages
         return captions.length;
     }
 
+    public void setListener(Listener listener){
+        this.listener = listener;
+    }
+
     @Override
     public CaptionedImagesAdapter.ViewHolder onCreateViewHolder(
             ViewGroup parent, int viewType){
@@ -49,7 +54,7 @@ public class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImages
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position){
+    public void onBindViewHolder(ViewHolder holder,final int position){
         CardView cardView = holder.cardView;
         ImageView imageView = cardView.findViewById(R.id.info_image);
         Drawable drawable =
@@ -58,6 +63,14 @@ public class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImages
         imageView.setContentDescription(captions[position]);
         TextView textView = cardView.findViewById(R.id.info_text);
         textView.setText(captions[position]);
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (listener != null) {
+                    listener.onClick(position);
+                }
+            }
+        });
 
     }
 }
